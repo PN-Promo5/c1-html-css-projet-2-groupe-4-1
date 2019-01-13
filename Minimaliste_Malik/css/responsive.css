@@ -1,0 +1,14 @@
+@media (max-width: 991px) {
+  html {
+    font-size: 90%;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+  
+}

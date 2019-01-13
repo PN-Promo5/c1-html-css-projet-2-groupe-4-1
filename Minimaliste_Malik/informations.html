@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+
+  <title>Infos pratiques</title>
+
+</head>
+
+<body>
+
+  <section class="container-fluid ">
+    <div class="row">
+      <div class="col-md-11 mt-3">
+        <h1 class="glitch">Informations</h1>
+      </div>
+      <div class="col-lg-1 pt-lg-3 mt-3">
+        <a href="index.html"> <img src="img/home.svg" alt="" class="img-home ml-auto"></a>
+      </div>
+    </div>
+
+    <div class="row mt-4">
+      <div class="col-lg-1 mt-3 pt-3 text-lg-center">
+        <h2>
+          <a href="programmation.html" class="glitchH2 glitch d-md-flex flex-md-column"><span>P</span><span>R</span>O<span>G</span><span>R</span><span>A</span><span>M</span><span>M</span><span>A</span>T<span>I</span><span>O</span><span>N</span></a>
+        </h2>
+
+      </div>
+      <div class="col-md-6 mt-4">
+        <iframe class="human" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2797.232345864978!2d-73.57055951307358!3d45.48526573042568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a7ca0194799%3A0xea8e18d78e6ea7c3!2sArsenal+art+contemporain!5e0!3m2!1sfr!2sfr!4v1546983512678"
+          width="600" height="450" style="border:0" allowfullscreen></iframe>
+
+      </div>
+      <div class="col-md-5 mt-3 div_programmation">
+        <p> vendredi 19 & Samedi 20 Avril 2019</p>
+        <p>Lieu de l'événement: Arsenal Art Contemporain, rue William, Montréal, Québec, Canada, H3J 1R8</p>
+        <h4>
+          Tarif
+        </h4>
+        <ul>
+          <li>Accès gratuit</li>
+          <li>Activités / spectacles gratuits</li>
+          <li>Activités / spéctacles payants : 10$ - 25$</li>
+        </ul>
+
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-light" data-toggle="modal" data-target="#exampleModal">
+          S'inscrire
+        </button>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title" id="exampleModalLabel">Inscription</h3>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form action="index.html" method="post" id="formm">
+            <fieldset>
+              <legend>Identité</legend>
+              <p>
+                <label for="firstName" class="fName">Prénom <sup>*</sup>:</label>
+                <input type="text" name="firstName" id="firstName" placeholder="Ex : Naruto" required>
+              </p>
+              <p>
+                <label for="lastName" class="fName">Nom <sup>*</sup>:</label>
+                <input type="text" name="lastName" id="lastName" placeholder="Ex : Uzumaki" required>
+              </p>
+              <p>
+                <label for="email" class="fName">Email <sup>*</sup>:</label>
+                <input type="text" name="email" id="email" placeholder="Ex : Uzumaki" required>
+              </p>
+
+                <h5>Choisissez le jour</h5>
+                <input type="checkbox" name="ipsum" class="day-width" id="days1">
+                <label>Jour 1</label>
+                <input type="checkbox" name="ipsum" class="day-width" id="days2">
+                <label> Jour 2</label><br>
+
+              <p id="error">Veuillez remplir tous les champs</p>
+
+            </fieldset>
+
+          </form>
+
+          <div id="sub-valid">
+            <p>Votre inscription à bien été validé.</p>
+          </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-light" id="btn-valid">Confirmer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+
+
+</body>
+
+</html>
