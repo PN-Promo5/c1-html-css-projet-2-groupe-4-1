@@ -1,48 +1,107 @@
-html, body,{
+html,
+body,
+{
 	padding: 0;
 	margin: 0;
 }
+
+body {
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+	background-color: black;
+}
+
+.home,
+.informations {
+	position: relative;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.programmation {
+	position: relative;
+	height: 100vh;
+	overflow-x: hidden;
+}
+
+.informations * {
+	cursor: pointer;
+}
+
+h2 {
+	font-size: inherit;
+}
+
 * {
-	cursor: url('../img/remote.png'),pointer;
+	cursor: url('../img/remote.png'), pointer;
 	text-transform: uppercase;
-	}
-*:active{
-	cursor: url('../img/remote-clicked.png'),pointer;
-	}
+}
+
+*:active {
+	cursor: url('../img/remote-clicked.png'), pointer;
+}
 
 .col-md-3 {
-	margin:0;
+	margin: 0;
 	padding: 0;
 }
+
+iframe {
+	width: 100%;
+	height: 100%;
+	-webkit-filter: invert(100%);
+	filter: invert(100%);
+	border: none;
+}
+
+video {
+	width: 100%;
+	height: 100%;
+}
+
+.w-25 {
+	width: 30% !important;
+}
+.go-back {
+	z-index: 10;
+}
 .infos {
-width: 100%;
-height: 100%;
-z-index: 3;
-top: 0;
-left: 0;
-background-color: black;
+	width: 100%;
+	height: 100%;
+	z-index: 3;
+	top: 0;
+	left: 0;
+	background-color: black;
 }
+
 *[class^="bg-tv"] {
-position: absolute;
-width: 100%;
-height: 100%;
-z-index: -1;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
 }
-.tv,.tv-link,.tv-programmation  {
+
+.tv,
+.tv-link,
+.tv-programmation {
 	position: relative;
 	height: 25vh;
 	display: flex;
-    border:1px solid black;
+	border: 1px solid black;
 	flex-direction: column;
 	justify-content: center;
 	text-align: center;
 }
+
 .tv-programmation {
-    border:1px solid white;
+	border: 1px solid white;
 }
+
 .tv-infos {
 	height: 25vh;
 }
+
 .video-container {
 	width: 100%;
 	height: 100%;
@@ -51,6 +110,7 @@ z-index: -1;
 	justify-content: center;
 	background-color: black;
 }
+
 .map-container {
 	width: 100%;
 	height: 100%;
@@ -58,128 +118,121 @@ z-index: -1;
 	flex-direction: column;
 	justify-content: center;
 	background-color: black;
-background-color: black;
+	background-color: black;
 }
+
 #form {
--webkit-filter:invert(100%) ;
-filter: invert(100%);
+	-webkit-filter: invert(100%);
+	filter: invert(100%);
 }
+
 .error-container {
--webkit-filter:invert(100%) ;
-filter: invert(100%);
-border : 2px solid green;	
-height: 100%;
-}
-iframe {
-	width: 100%;
+	-webkit-filter: invert(100%);
+	filter: invert(100%);
+	border: 2px solid green;
 	height: 100%;
-	-webkit-filter:invert(100%) ;
-filter: invert(100%);
 }
-video {
-  width: 100%; 
-  height: 100%;
-}
+
 .bg {
 	position: absolute;
 	z-index: -1;
 }
+
 .link {
-color: white;
-text-decoration: underline;
-text-decoration-color:white !important ;
+	color: white;
+	text-decoration: underline;
+	text-decoration-color: white !important;
 }
+
 .link:hover {
-color: white;
+	color: white;
 }
+
 .text-black {
-	color:black;
+	color: black;
 }
+
 .gold {
 	color: gold;
 }
+
 .magenta {
 	color: magenta;
 }
+
 .red {
 	color: red;
 }
+
 .purple {
-color: purple;
+	color: purple;
 }
+
 .fuchsia {
 	color: fuchsia;
 }
+
 .green {
-color: green;
+	color: green;
 }
+
 .lime {
 	color: lime;
 }
+
 .olive {
-color:olive;
+	color: olive;
 }
+
 .yellow {
 	color: yellow;
 }
+
 .DodgerBlue {
-color: dodgerblue;
+	color: dodgerblue;
 }
+
 .aqua {
-	color:aqua;
+	color: aqua;
 }
+
 .orange {
-color: orange;
+	color: orange;
 }
+
 .pink {
-color: pink;
+	color: pink;
 }
+
 .GreenYellow {
-color: greenyellow;
+	color: greenyellow;
 }
+
 .brown {
-color: brown;
+	color: brown;
 }
+
 .salmon {
-color: salmon;
+	color: salmon;
 }
+
 .crimson {
 	color: crimson;
 }
+
 .text-random-color {
 	font-size: inherit;
 }
-h3{
-	font-size: inherit;	
-}
-body {
-	width: 100%;
-	height: 100%;
-	overflow-x: hidden;
-	background-color: black;
-}
-.home,.informations {
-	position: relative;
-	height: 100vh;
-	overflow: hidden;
-}
-.programmation {
-	position: relative;
-	height: 100vh;
-	overflow-x: hidden;
-}
-.informations *{
-	cursor:pointer;
-}
-.form-control {
-border-radius: 0;}
 
-.w-25 {
-	width: 30% !important;
+.form-control {
+	border-radius: 0;
 }
+
 .error-container {
 	padding: 5px;
 }
+
 .code {
 	height: 25vh;
 }
+
